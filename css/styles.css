@@ -95,7 +95,7 @@ main{
 }
 
 aside { 
-  background-color: blueviolet;
+  background-color: rgb(202, 108, 20);
   grid-area: aside;
 }
 
