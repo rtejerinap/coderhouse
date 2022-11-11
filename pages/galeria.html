@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Montserrat:wght@500;800&family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkalami&family=Montserrat:wght@500;800&family=Passions+Conflict&display=swap"
+        rel="stylesheet">
     <title>Instituto del Norte</title>
     <title>Instituto del Norte | Galeria</title>
 </head>
@@ -15,28 +19,65 @@
 <body>
     <header class="header-grid">
         <h1>Galeria</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="nav-enlace">Inicio</a></li>
-                <li><a href="../pages/nosotros.html" class="nav-enlace">Nosotros</a></li>
-                <li><a href="../pages/servicios.html" class="nav-enlace">Servicios</a></li>
-                <li><a href="../pages/galeria.html" class="nav-enlace">Galería</a></li>
-                <li><a href="../pages/contacto.html" class="nav-enlace">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        
     </header>
     <main>
         <section>
-            <div class="galeria">              
-                <img src="../imagenes/AdobeStock_1566770_Preview.jpeg" alt="Galeria CSS 1" />
-                <img src="../imagenes/AdobeStock_354632150_Preview.jpeg"  alt="Galeria CSS 2"  />
-                <img src="../imagenes/AdobeStock_354639935_Preview.jpeg" alt="Galeria CSS 3" />
-                <img src="../imagenes/AdobeStock_37392562.jpeg"  alt="Galeria CSS 4" />
+
+            <div id="carouselExampleControls " class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imagenes/AdobeStock_1566770_Preview.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/AdobeStock_354632150_Preview.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/AdobeStock_354639935_Preview.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
               </div>
-              
+        
         </section>
     </main>
-   
+
     <footer>
         <div class="container__footer">
             <div class="box__footer">
@@ -54,9 +95,12 @@
                 <h3>Desarrollado por Ricardo Tejerina</h3>
             </div>
         </div>
-        
+
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
