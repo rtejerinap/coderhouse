@@ -1,23 +1,127 @@
 // Custom.scss
 // Opción A: Incluir todo Bootstrap
-$primary: #cce0f1;
-$danger: #8e9794;
- 
+$primary: #fffcd4;
+$danger: #448158;
+$active: #67C285;
+$pie: #5F7366;
+
 $theme-colors: (
-  "primary": $primary,
-  "danger": $danger
+    "primary": $primary,
+    "danger": $danger
 );
-@import "../node_modules/bootstrap/scss/bootstrap";
-.navbar {
-    border-bottom: 1px solid darken($danger, 20%);
+
+
+header {
+    background: rgb(103, 194, 133);
+    background: linear-gradient(0deg, rgba(103, 194, 133, 1) 0%, rgba(255, 252, 212, 1) 100%);
+    border-bottom: #5F7366;
+}
+
+body {
+    background: rgb(255, 252, 212);
+    background: linear-gradient(0deg, rgba(255, 252, 212, 1) 0%, rgba(103, 194, 133, 1) 100%);
 }
 
 .nav-item {
-    border-left: 1px solid rgba(168, 192, 236, 0.1);
-    border-right: 1px solid rgba(168, 192, 236, 0.1);
-// Luego agrega código personalizado adicional aquí
-}
-.nav-link {
-    color = white;
+
+    border-radius: 25%;
+    background-color: $danger;
+    margin-left: 4px;
+    transition: ease-in .6s;
+
     &:hover {
-        background-color: $active-bg-color;}}
+        background-color: $danger;
+    }
+
+    // Luego agrega código personalizado adicional aquí
+}
+
+.nav-link {
+    color: $primary;
+    transition: ease-in .3s;
+
+    &:hover {
+        background-color: $primary;
+
+    }
+}
+
+.a linkk {
+    text-decoration: none;
+}
+
+.bg-pie {
+    background-color: $primary;
+}
+
+.text-pie {
+    text-shadow: $danger ;
+    text-decoration: none;
+}
+
+.serv {
+    margin-bottom: 2px;
+
+    &__titulo {
+        font-size: 3rem;
+    }
+}
+
+.servicios1 {
+    background-color: $primary;
+    border-radius: 25px;
+    height: 25%;
+    text-align: center;
+    padding: auto;
+
+
+
+
+}
+
+.servicios2 {
+    background-color: $primary;
+    border-radius: 25px;
+    height: 25%;
+    margin-bottom: 13px;
+    text-align: center;
+
+
+
+}
+
+.servicios3 {
+    background-color: $primary;
+    border-radius: 25px;
+    height: 25%;
+    margin-bottom: 13px;
+    text-align: center;
+
+
+}
+
+.servicios4 {
+    background-color: $primary;
+    border-radius: 25px;
+    height: 25%;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+// animacion
+.titu{
+    transition-duration: 2s;
+}
+
+.titu:hover {
+    box-shadow: 0px 13px 13px;
+    transform: scale(1,1.5);
+
+
+}
+
+.logo{transition-duration: 2s;
+&:hover{
+
+    transform: rotate(180deg);
+}}

@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Funeraria Servicios funebres">
+    <meta name="keywords" content="servicios funebres,tanatopraxia,traslados,velorios, contacto">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="../scss/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,57 +20,58 @@
     <title>Instituto del Norte | Contacto</title>
 </head>
 <body>
-    <header class="header-grid">
-        <h1>Formulario de Contacto</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menú</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-50 ">
+        <div class="container">
+            <h1 class="titu display-5 col-3 text-center fw-bold ">Instituto del Norte</h1>
+            <a class="  navbar-brand display-1 logo " href="#"><img src="../imagenes/logo.png" class="w-50 logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/servicios.html" >Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/galeria.html" >Galería</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                  </li>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end j" id="navbarTogglerDemo02">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
-                </div>
             </div>
-          </nav>  
+        </div>
     </header>
     <main>
         <section>
+
+            
             <h2>Formulario de Contacto</h2>
-            <form action="">
+            <form action="" class="form-row">
                 <div>
-                    <label for="nombre_usuario">Nombre y Apellido</label>
+                    <label for="nombre_usuario" class="col-12 col-md-4 ">Nombre y Apellido</label>
                     <input type="text" name="nombre" id="nombre_usuario" placeholder="Nombre y Apellido" required>
                 </div>
                 <div>
-                    <label for="e_mail">Email</label>
+                    <label for="e_mail" class="col-12 col-md-4 ">Email</label>
                     <input type="email" name="email" id="e_mail" placeholder="Ingrese su e-mail" required>
                 </div>
                 <div>
-                    <label for="asunto">Asunto: </label>
+                    <label for="asunto"  class="col-12 col-md-4 ">Asunto: </label>
                     <select name="asunto" id="asunto">
                         <option value="Consultas">Consultas</option>
                         <option value="Sugerencias">Sugerencias</option>
                     </select>
                 </div>
                 <div>
-                    <label for="area_texto">Mensaje</label>
+                    <label for="area_texto" class="col-12 col-md-4 ">Mensaje</label>
                     <textarea name="" id="area_texto" cols="30" rows="10" placeholder="Ingrese su consulta o sugerencia"
                         required></textarea>
                 </div>
@@ -75,23 +83,85 @@
             </form>
         </section>
     </main>
-    <footer>
-        <div class="container__footer">
-            <div class="box__footer">
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                </ul>
+    <footer class="container-fluid   text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+        <div class="container-fluid my-5">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 text-bg-dark bg-pie ">
+                <!-- Izquierda-->
+                <div class="me-5 fw-bold">
+                    <span>Síguenos en nuestras Redes Sociales:</span>
+                </div>
+                <!-- Izquierda -->
+
+                <!-- Derecha -->
+                <div>
+                    <a href="" class="text-dark me-4 text-decoration-none">
+                        <i class="bi-facebook"></i>
+                    </a>
+                    <a href="" class="text-dark me-4 text-decoration-none">
+                        <i class="bi-twitter"></i>
+                    </a>
+                    <a href="" class="text-dark me-4 text-decoration-none">
+                        <i class="bi-google"></i>
+                    </a>
+                    <a href="" class="text-dark me-4 text-decoration-none">
+                        <i class="bi-instagram"></i>
+                    </a>
+                </div>
+                <!-- Derecha -->
+            </section>
+            <!-- Seccion: Social media -->
+
+            <!-- Seccion: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold">Instituto del norte</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Tu seguro de sepelio, a tu manera. Brindale tranquilidad a tu familia ante un
+                                momento delicado
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold">Servicios</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="../pages/servicios.html" class="text-dark text-pie">Sepelio</a>
+                            </p>
+                            <p>
+                                <a href="../pages/servicios.html" class="text-dark text-pie">Entierro</a>
+                            </p>
+                            <p>
+                                <a href="../pages/servicios.html" class="text-dark text-pie">Tanatopraxia</a>
+                            </p>
+                            <p>
+                                <a href="../pages/servicios.html" class="text-dark text-pie">Cremaciones</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold">Contacto</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> San Salvador de Jujuy Jujuy AR, Patricias Argentinas
+                                247, Y4600</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                            <p><i class="fas fa-phone mr-3"></i>03888 42-3146</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Seccion: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-pie">
+                © 2022 Copyright:
+                <a class="text-dark" href="#">Ricardo Tejerina Perezlindo</a>
             </div>
-            <div class="box__footer">
-                <h3>Datos de Contacto</h3>
-            </div>
-            <div class="box__footer">
-                <h3>Desarrollado por Ricardo Tejerina</h3>
-            </div>
-        </div>      
+            <!-- Copyright -->
+        </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
