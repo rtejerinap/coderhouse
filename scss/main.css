@@ -9,6 +9,10 @@ body {
   background: linear-gradient(0deg, rgb(255, 252, 212) 0%, rgb(103, 194, 133) 100%);
 }
 
+h1 {
+  font-family: "Alexandria", sans-serif;
+}
+
 .nav-item {
   border-radius: 25%;
   background-color: #448158;
@@ -41,7 +45,10 @@ body {
 }
 
 .serv {
-  margin-bottom: 2px;
+  margin-bottom: 20px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
 }
 .serv__titulo {
   font-size: 3rem;
@@ -50,28 +57,16 @@ body {
 .servicios1 {
   background-color: #fffcd4;
   border-radius: 25px;
-  height: 25%;
+  width: 95%;
+  height: auto;
   text-align: center;
-  padding: auto;
+  padding: 10;
+  font-family: "Caveat", cursive;
+  word-wrap: break-word;
+  font-size: 2rem;
 }
 
 .servicios2 {
-  background-color: #fffcd4;
-  border-radius: 25px;
-  height: 25%;
-  margin-bottom: 13px;
-  text-align: center;
-}
-
-.servicios3 {
-  background-color: #fffcd4;
-  border-radius: 25px;
-  height: 25%;
-  margin-bottom: 13px;
-  text-align: center;
-}
-
-.servicios4 {
   background-color: #fffcd4;
   border-radius: 25px;
   height: 25%;
@@ -85,7 +80,7 @@ body {
 
 .titu:hover {
   box-shadow: 0px 13px 13px;
-  transform: scale(1, 1.5);
+  transform: scale(1.05, 1.05);
 }
 
 .logo {
@@ -93,4 +88,38 @@ body {
 }
 .logo:hover {
   transform: rotate(180deg);
+}
+
+.servicios1:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.servicios1-text {
+  height: 80px;
+}
+
+.servicios1::before, .servicios1::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+
+.servicios1::before {
+  transform-origin: left top;
+}
+
+.servicios1::after {
+  transform-origin: right bottom;
+}
+
+.servicios1:hover::before, .servicios1:hover::after, .servicios1:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
 }/*# sourceMappingURL=main.css.map */

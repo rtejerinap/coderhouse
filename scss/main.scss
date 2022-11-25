@@ -22,6 +22,11 @@ body {
     background: linear-gradient(0deg, rgba(255, 252, 212, 1) 0%, rgba(103, 194, 133, 1) 100%);
 }
 
+h1{
+    //font-family: 'Abel', sans-serif;
+    font-family: 'Alexandria', sans-serif;
+    //font-family: 'Caveat', cursive;
+}
 .nav-item {
 
     border-radius: 25%;
@@ -60,21 +65,27 @@ body {
 }
 
 .serv {
-    margin-bottom: 2px;
-
+    margin-bottom: 20px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
     &__titulo {
         font-size: 3rem;
     }
 }
 
 .servicios1 {
-    background-color: $primary;
+    
+    background-color: $primary ;
     border-radius: 25px;
-    height: 25%;
+    width: 95%;
+
+    height: auto;
     text-align: center;
-    padding: auto;
-
-
+    padding: 10;
+    font-family: 'Caveat', cursive;
+    word-wrap: break-word;
+    font-size: 2rem;
 
 
 }
@@ -90,24 +101,6 @@ body {
 
 }
 
-.servicios3 {
-    background-color: $primary;
-    border-radius: 25px;
-    height: 25%;
-    margin-bottom: 13px;
-    text-align: center;
-
-
-}
-
-.servicios4 {
-    background-color: $primary;
-    border-radius: 25px;
-    height: 25%;
-    margin-bottom: 13px;
-    text-align: center;
-}
-
 // animacion
 .titu{
     transition-duration: 2s;
@@ -115,7 +108,7 @@ body {
 
 .titu:hover {
     box-shadow: 0px 13px 13px;
-    transform: scale(1,1.5);
+    transform: scale(1.05,1.05);
 
 
 }
@@ -125,3 +118,33 @@ body {
 
     transform: rotate(180deg);
 }}
+
+.servicios1:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .servicios1-text{
+    height:80px;  
+  }
+  
+  .servicios1::before, .servicios1::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .servicios1::before {
+    transform-origin: left top;
+  }
+  .servicios1::after {
+    transform-origin: right bottom;
+  }
+  .servicios1:hover::before, .servicios1:hover::after, .servicios1:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
